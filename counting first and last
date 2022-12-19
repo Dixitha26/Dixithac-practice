@@ -1,0 +1,29 @@
+Caption Jack sparrow travels across seas for treasure hunt. After the fight with Hector Barbossa he finds a key for the treasure in a secret box. That box is encrypted with a single digit number. The clue to open that box is 
+
+" I will be always four"
+
+" I can only be opened when you add my first and last and enter it"
+
+" If you find a sign , you should not consider it"
+
+Help Captain Jack Sparrow to open the box.
+
+
+INPUT FORMAT: 
+
+Input consists of a single integer which is present on the box.
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,first,last;
+   cin>>n;
+   first=n%10;//1
+   while(n>=10)
+   {
+       n=n/10;//1001/10=100,100/10=10 
+       last=n;
+   }
+   cout<<first+last;
+}
+//10001

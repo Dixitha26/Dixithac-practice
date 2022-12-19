@@ -1,0 +1,13 @@
+Write a C program to get a float value from the user and display it in the below-mentioned format.
+
+HINT: Use ceil() and floor() functions from <math.h> header file
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main()
+{
+    float a;
+    cin>>a;
+    cout<<floor(a)<<endl<<ceil(a)<<endl<<floor(a);
+    
+}

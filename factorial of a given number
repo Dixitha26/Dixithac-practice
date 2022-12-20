@@ -1,0 +1,19 @@
+Write a C program to find the factorial of a given number.
+
+Sample Input:
+5
+
+#include<iostream>
+using namespace std;
+int main()
+{
+     int fact=1,n,i;
+     cin>>n;
+     for(i=1;i<=n;i++)
+     {
+         fact=fact*i;
+     }
+         cout<<fact;
+     
+     
+}

@@ -1,0 +1,96 @@
+Zack is going to celebrate his birthday on January. His father wants to buy a new dress for his son. As they are Christian, he also wants to buy new dress for Christmas. As all the textile showrooms offers discount on the month of December his father decides to buy dress for Zack's birthday in December itself. Before that he wants to know how much discounts they give on each month. In the first month of the year they offer 20% discount. In the third and fourth month they offer 10% discount. In the sixth and seventh month they offer 75% discount. In the tenth and eleventh month they offer 30% discount. In the twelfth moth they offer 35% discount. Implement this program using switch.
+
+Input & Output Format:
+
+input consists of two integers.
+
+first input corresponds to the amount.
+
+second input corresponds to the month
+
+output consists of the amount after calculating the discount.
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+     float a;
+     int m;
+     float discount;
+     cin>>a>>m;
+     switch(m)
+     {
+        case 1:
+            discount=(20*a)/100;
+            a=a-discount;
+            cout<<"Zack's father needs to pay Rs.";
+            cout<<fixed<<setprecision(2)<<a;
+            break;
+        case 2:
+            
+            cout<<"Zack's father needs to pay Rs.";
+            cout<<fixed<<setprecision(2);
+            break;
+        case 3:
+            discount=(10*a)/100;
+            a=a-discount;
+            cout<<setprecision(2)<<"Zack's father needs to pay Rs.";
+            cout<<fixed<<setprecision(2);
+            cout<<a;
+            break;
+        
+        case 4:
+            discount=(10*a)/100;
+            a=a-discount;
+            cout<<fixed<<setprecision(2)<<"Zack's father needs to pay Rs.";
+            cout<<a;
+            break;
+        case 5:
+            cout<<fixed<<setprecision(2)<<"Zack's father needs to pay Rs.";
+            cout<<a;
+            break;
+        case 6:
+            discount=(75*a)/100;
+            a=a-discount;
+            cout<<fixed<<setprecision(2)<<"Zack's father needs to pay Rs.";
+            cout<<a;
+            break;
+        case 7:
+            discount=(75*a)/100;
+            a=a-discount;
+            cout<<fixed<<setprecision(2)<<"Zack's father needs to pay Rs.";
+            cout<<a;
+            break;
+        case 8:
+            cout<<fixed<<setprecision(2)<<"Zack's father needs to pay Rs.";
+            cout<<a;
+            break;
+        case 9:
+            cout<<fixed<<setprecision(2)<<"Zack's father needs to pay Rs."<<a;
+            
+            break;
+        case 10:
+            discount=(30*a)/100;
+            a=a-discount;
+            cout<<fixed<<setprecision(2)<<"Zack's father needs to pay Rs.";
+            cout<<a;
+            break;
+        case 11:
+            discount=(30*a)/100;
+            a=a-discount;
+            cout<<fixed<<setprecision(2)<<"Zack's father needs to pay Rs.";
+            cout<<a;
+            break;
+        case 12:
+           discount=(35*a)/100;
+            a=a-discount;
+            cout<<fixed<<setprecision(2)<<"Zack's father needs to pay Rs.";
+            cout<<a;
+            break;
+            default:
+            cout<<"invalid input";
+            break;
+        }    
+}       
+         
+     

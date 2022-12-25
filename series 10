@@ -1,0 +1,19 @@
+Write a  program to generate the following series – 0, 2, 6, 12, 20…..
+
+Sample Input:
+
+5
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,i,j=2,val=0;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        cout<<val<<" ";
+        val=val+j;
+        j=j+2;
+    }
+}

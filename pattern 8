@@ -1,0 +1,40 @@
+Write a C Program to generate the following pattern :
+
+Sample Input:
+
+5
+Sample Output:
+
+
+1
+
+121
+
+12321
+
+1234321
+
+123454321
+#include<iostream>
+using namespace std;
+int main()
+{
+     int i,j,n,k;
+     cin>>n;
+     for(i=1;i<=n;i++)
+     {
+    
+     for(k=1;k<=i;k++)
+     {
+         cout<<k;
+     }
+     
+     for(j=i-1;j>=1;j--)
+     {
+         cout<<j;
+     }
+     cout<<endl;
+     }
+     
+  
+}

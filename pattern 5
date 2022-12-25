@@ -1,0 +1,40 @@
+Write a Program to generate the following pattern :
+
+Sample Input:
+
+3
+
+Sample Output:
+   *
+  ***
+ *****
+  ***
+   *
+ 
+ #include<iostream>
+using namespace std;
+int main()
+{
+     int i,j,k,n,l;
+     cin>>n;
+     for(i=-n;i<=n;i++)
+     {
+      if(i<0) 
+      {
+          l=-i;
+      }
+      else
+      {
+          l=i;
+      }
+         for(k=0;k<l;k++)
+         {
+             cout<<"  ";
+         }
+     for(j=0;j<2*(n-l)+1;j++)
+     {
+         cout<<"* ";
+     }
+     cout<<endl;
+     }
+}

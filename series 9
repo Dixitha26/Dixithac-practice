@@ -1,0 +1,28 @@
+Write a program to generate the following series – 1, 4, 27, 16, 125….
+
+Sample Input:
+
+
+5
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+    int i,n,n1=1,n2=4;
+    cin>>n;
+    for(i=1;i<=n;i++)
+    {
+        if(i%2==1)
+          {
+            n1=pow(i,3);
+            cout<<n1<<" ";
+          }
+        else
+         {
+        n2=i*i;
+        cout<<n2<< " ";
+         }
+   
+    }
+}

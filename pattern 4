@@ -1,0 +1,35 @@
+Write a Program to generate the following pattern :
+
+Sample Input:
+
+3
+
+Sample Output:
+
+                  *
+
+               * * *
+
+            * * * * *
+            
+#include<iostream>
+using namespace std;
+int main()
+{
+int i,j,k,r;    //k=spacing,r=input given by the user
+cin>>r;    //3
+for(i=0;i<r;i++)//0,0<3;
+//1,1<3
+   {
+     for(k=r;k>i+1;k--)    //k=3,k>0;
+                            //k=2 
+       {
+          cout<<" ";     
+       }
+     for(j=0;j<=i*2;j++)    //j=0 
+       {
+          cout<<"*";    
+       } 
+    cout<<endl;     
+   }
+}

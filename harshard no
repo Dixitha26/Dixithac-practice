@@ -1,0 +1,26 @@
+Write a C program to find whether the given number is Harshard number or not.
+
+Sample Input:
+1729
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,rem,sum=0;
+    cin>>n;
+    if((n!=0))
+    {
+        rem=n%10;//2030%10=200
+        sum=sum+n;//2036
+        n=n/10;//30
+        
+    }
+    if(sum%n==0)
+    {
+       cout<<"Harshard number";
+    }
+    else
+    {
+        cout<<"Not Harshard number";
+    }
+}
